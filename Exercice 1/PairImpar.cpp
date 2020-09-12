@@ -6,7 +6,7 @@
 //biblio cout/cin
 #include <iostream>
 
-int main()
+void main()
 {
 	setlocale(LC_ALL, ""); // convertie les accents à windows
 
@@ -19,6 +19,27 @@ int main()
 	std::cin >> nombre1;
 
 
+	//verifie si le nombre est pair ou impair
+	if (nombre1 % 2 == 0)
+	{  //Le programme envoie pair si le nombre est pair
+		std::cout << nombre1 << " est pair";
+	}
+
+	else
+	{       //Le programme envoie impair si le nombre est impair
+		std::cout << nombre1 << " est impair";
+
+	}
 
 
 }
+/*plan test
+
+nombre    résultat attendu
+5           nombre impair
+
+12            nombre pair
+
+17           nombre impair
+
+*/
